@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 <style>
 :root { --bg: #0a0a0a; --text: #ffffff; --primary: #ef4444; }
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-body { background: var(--bg); color: var(--text); overflow-x: hidden; }
+body { margin: 0; padding: 0; background: var(--bg); color: var(--text); overflow-x: hidden; }
 .nav { display: flex; justify-content: space-between; padding: 2rem 5%; position: absolute; width: 100%; z-index: 10; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); background: rgba(10,10,10,0.8); backdrop-filter: blur(10px); }
 .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; color: white; }
 .nav-links { display: flex; gap: 3rem; align-items: center; }
@@ -45,12 +45,16 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; }
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </div>
-    <div class="menu-btn"><div class="menu-icon"></div></div>
+    
 </nav>
 
-<div class="page-header">
-    <h1>Our<br><span>Capabilities.</span></h1>
-    <p>航空宇宙から医療機器まで。極限の精度が要求される分野において、私たちの技術は常に基準を生み出してきました。</p>
+<div class="page-header" style="position:relative; overflow:hidden; color:white; padding: 12rem 5% 6rem; margin-top:-100px;">
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:url('services-bg.png') center/cover; z-index:-2;"></div>
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)); z-index:-1;"></div>
+    <div style="position:relative; z-index:1; max-width:800px; margin:0 auto;">
+        <h1 style="color:white; margin-bottom:1.5rem;">Our<br><span>Capabilities.</span></h1>
+        <p>航空宇宙から医療機器まで。極限の精度が要求される分野において、私たちの技術は常に基準を生み出してきました。</p>
+    </div>
 </div>
 
 <div class="services-list">
@@ -61,7 +65,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; }
         </div>
         <div class="service-content">
             <p>5軸マシニングセンタを用いた超精密加工技術。チタンやインコネルといった難削材の加工において、ミクロン単位の精度を安定して実現します。</p>
-            <div><a href="#" class="btn">View Specs</a></div>
+            <div><a href="services.html" class="btn">View Specs</a></div>
         </div>
     </div>
     <div class="service-item">
@@ -71,7 +75,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; }
         </div>
         <div class="service-content">
             <p>工場の自動化を推進するカスタムロボティクスソリューション。画像認識AIと連動したピッキングシステムで、生産効率を劇的に向上させます。</p>
-            <div><a href="#" class="btn">View Specs</a></div>
+            <div><a href="services.html" class="btn">View Specs</a></div>
         </div>
     </div>
     <div class="service-item">
@@ -81,9 +85,11 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; }
         </div>
         <div class="service-content">
             <p>三次元測定機とレーザースキャナーを用いた厳格な品質検査。ISO9001およびAS9100（航空宇宙産業向け）に準拠した管理体制を敷いています。</p>
-            <div><a href="#" class="btn">View Specs</a></div>
+            <div><a href="services.html" class="btn">View Specs</a></div>
         </div>
     </div>
 </div>
 </body>
 </html>
+
+
