@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Apex Dynamics</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #0a0a0a; --text: #ffffff; --primary: #ef4444; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background: var(--bg); color: var(--text); overflow-x: hidden; }
+.nav { display: flex; justify-content: space-between; padding: 2rem 5%; position: absolute; width: 100%; z-index: 10; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); background: rgba(10,10,10,0.8); backdrop-filter: blur(10px); }
+.logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; color: white; }
+.nav-links { display: flex; gap: 3rem; align-items: center; }
+.nav-links a { text-decoration: none; color: white; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; transition: color 0.2s; }
+.nav-links a:hover { color: var(--primary); }
+.menu-btn { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.2s; }
+.menu-btn:hover { background: rgba(255,255,255,0.1); }
+.menu-icon { width: 16px; height: 2px; background: white; position: relative; }
+.menu-icon::before, .menu-icon::after { content: ''; position: absolute; width: 16px; height: 2px; background: white; left: 0; }
+.menu-icon::before { top: -5px; } .menu-icon::after { top: 5px; }
+.page-header { padding: 12rem 5% 6rem; max-width: 1200px; margin: 0 auto; position: relative; }
+.page-header h1 { font-size: 5rem; font-weight: 800; line-height: 1; letter-spacing: -0.04em; margin-bottom: 2rem; text-transform: uppercase; }
+.page-header h1 span { color: var(--primary); }
+.page-header p { font-size: 1.25rem; color: rgba(255,255,255,0.7); max-width: 700px; line-height: 1.6; }
+.content-wrapper { max-width: 1200px; margin: 0 auto; padding: 0 5% 8rem; }
+.grid-section { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.1); }
+.grid-section h2 { font-size: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; }
+.grid-section p { font-size: 1.1rem; color: #a3a3a3; line-height: 1.8; margin-bottom: 1.5rem; }
+table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+th, td { padding: 1.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: left; }
+th { font-weight: 600; color: white; width: 30%; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; }
+td { color: #a3a3a3; }
+</style>
+</head>
+<body>
+<nav class="nav">
+    <a href="index.html" class="logo">Apex Dynamics</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="menu-btn"><div class="menu-icon"></div></div>
+</nav>
+
+<div class="page-header">
+    <h1>Our<br><span>Heritage.</span></h1>
+    <p>1950年の創業以来、私たちは常に「製造業の限界」に挑戦し続けてきました。最先端のテクノロジーと熟練のエンジニアリングが交差する場所、それがApex Dynamicsです。</p>
+</div>
+
+<div class="content-wrapper">
+    <div class="grid-section">
+        <h2>Mission Statement</h2>
+        <div>
+            <p>世界のインフラを支える最高品質のコンポーネントを製造すること。一切の妥協を許さない品質管理プロセスと、次世代の自動化工場によって、私たちは持続可能な未来の基盤を築きます。</p>
+        </div>
+    </div>
+    <div class="grid-section">
+        <h2>Corporate Data</h2>
+        <div>
+            <table>
+                <tr><th>Company Name</th><td>Apex Dynamics Corporation</td></tr>
+                <tr><th>Established</th><td>October 1950</td></tr>
+                <tr><th>President</th><td>Robert K. Steel</td></tr>
+                <tr><th>Core Business</th><td>Precision Machining, Robotics, Aerospace Components</td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

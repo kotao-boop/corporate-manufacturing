@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Apex Dynamics</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #0a0a0a; --text: #ffffff; --primary: #ef4444; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background: var(--bg); color: var(--text); overflow-x: hidden; }
+.nav { display: flex; justify-content: space-between; padding: 2rem 5%; position: absolute; width: 100%; z-index: 10; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); background: rgba(10,10,10,0.8); backdrop-filter: blur(10px); }
+.logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; color: white; }
+.nav-links { display: flex; gap: 3rem; align-items: center; }
+.nav-links a { text-decoration: none; color: white; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; transition: color 0.2s; }
+.nav-links a:hover { color: var(--primary); }
+.menu-btn { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.2s; }
+.menu-btn:hover { background: rgba(255,255,255,0.1); }
+.menu-icon { width: 16px; height: 2px; background: white; position: relative; }
+.menu-icon::before, .menu-icon::after { content: ''; position: absolute; width: 16px; height: 2px; background: white; left: 0; }
+.menu-icon::before { top: -5px; } .menu-icon::after { top: 5px; }
+.page-header { padding: 12rem 5% 6rem; max-width: 1200px; margin: 0 auto; position: relative; }
+.page-header h1 { font-size: 5rem; font-weight: 800; line-height: 1; letter-spacing: -0.04em; margin-bottom: 2rem; text-transform: uppercase; }
+.page-header h1 span { color: var(--primary); }
+.page-header p { font-size: 1.25rem; color: rgba(255,255,255,0.7); max-width: 700px; line-height: 1.6; }
+.services-list { max-width: 1200px; margin: 0 auto; padding: 0 5% 8rem; }
+.service-item { display: flex; flex-direction: column; padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.1); transition: background 0.3s; }
+.service-item:hover { background: rgba(255,255,255,0.02); }
+.service-title { display: flex; align-items: baseline; gap: 2rem; margin-bottom: 2rem; }
+.service-number { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+.service-title h2 { font-size: 3rem; font-weight: 800; text-transform: uppercase; letter-spacing: -0.02em; margin: 0; }
+.service-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding-left: 3.5rem; }
+.service-content p { font-size: 1.1rem; color: #a3a3a3; line-height: 1.8; }
+.btn { padding: 1rem 2rem; background: transparent; border: 1px solid white; color: white; text-transform: uppercase; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.1em; cursor: pointer; transition: all 0.3s ease; display: inline-block; text-align: center; margin-top: 1.5rem; }
+.btn:hover { background: white; color: black; }
+@media (max-width: 768px) { .service-content { grid-template-columns: 1fr; padding-left: 0; } }
+</style>
+</head>
+<body>
+<nav class="nav">
+    <a href="index.html" class="logo">Apex Dynamics</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="menu-btn"><div class="menu-icon"></div></div>
+</nav>
+
+<div class="page-header">
+    <h1>Our<br><span>Capabilities.</span></h1>
+    <p>航空宇宙から医療機器まで。極限の精度が要求される分野において、私たちの技術は常に基準を生み出してきました。</p>
+</div>
+
+<div class="services-list">
+    <div class="service-item">
+        <div class="service-title">
+            <span class="service-number">01</span>
+            <h2>Precision Machining</h2>
+        </div>
+        <div class="service-content">
+            <p>5軸マシニングセンタを用いた超精密加工技術。チタンやインコネルといった難削材の加工において、ミクロン単位の精度を安定して実現します。</p>
+            <div><a href="#" class="btn">View Specs</a></div>
+        </div>
+    </div>
+    <div class="service-item">
+        <div class="service-title">
+            <span class="service-number">02</span>
+            <h2>Industrial Robotics</h2>
+        </div>
+        <div class="service-content">
+            <p>工場の自動化を推進するカスタムロボティクスソリューション。画像認識AIと連動したピッキングシステムで、生産効率を劇的に向上させます。</p>
+            <div><a href="#" class="btn">View Specs</a></div>
+        </div>
+    </div>
+    <div class="service-item">
+        <div class="service-title">
+            <span class="service-number">03</span>
+            <h2>Quality Assurance</h2>
+        </div>
+        <div class="service-content">
+            <p>三次元測定機とレーザースキャナーを用いた厳格な品質検査。ISO9001およびAS9100（航空宇宙産業向け）に準拠した管理体制を敷いています。</p>
+            <div><a href="#" class="btn">View Specs</a></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
